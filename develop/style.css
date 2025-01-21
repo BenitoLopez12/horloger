@@ -1,0 +1,337 @@
+@font-face {
+    font-family: 'Sofia Pro bold';
+    src: url('../../public/fonts/SofiaProBold.otf') format('woff2');
+}
+
+/* normalize */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100dvh;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #2d2d2d;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-wrap: balance;
+    font-family: 'Sofia Pro bold';
+    margin-top: 0;
+}
+
+p {
+    text-wrap: pretty;
+    opacity: 0.8;
+    line-height: 30px;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+img {
+    width: unset;
+    height: unset;
+}
+
+hr {
+    border: none;
+    border-bottom: 3px solid #2d2d2d;
+    margin: 0;
+}
+hr.vertical{
+    border: none;
+    border-left: 2px solid #2d2d2d;
+    height: 30px;
+}
+
+strong {
+    font-family: 'Sofia Pro bold';
+}
+
+/* clases globales ------------------------ */
+.font-light {
+    font-family: 'Sofia Pro light';
+    font-weight: lighter;
+}
+
+.font-bold {
+    font-family: 'Sofia Pro bold';
+}
+
+.content {
+    width: 100%;
+    padding: 0px 50px;
+}
+
+.content-limit {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.btn-main {
+    border-radius: 100px;
+    border: 1px solid #ccc;
+    padding: 15px 60px;
+    font-size: 20px;
+    transition: 0.5s;
+    font-family: 'Sofia Pro light';
+    color: #ddd;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-main:hover {
+    background-color: #ccc;
+    color: #000;
+    border-radius: 0px;
+}
+
+.card-gray {
+    padding: 50px;
+    background-color: #222224;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.top-0 {
+    top: 0;
+}
+
+.left-0 {
+    left: 0;
+}
+
+.right-0 {
+    right: 0;
+}
+
+.bottom-0 {
+    bottom: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.mt-1 {
+    margin-top: 20px;
+}
+
+.mt-2 {
+    margin-top: 50px;
+}
+
+.mt-3 {
+    margin-top: 70px;
+}
+
+.mt-4 {
+    margin-top: 100px;
+}
+
+.mt-5 {
+    margin-top: 150px;
+}
+
+.mt-6 {
+    margin-top: 200px;
+}
+
+.font-1 {
+    font-size: 18px;
+}
+
+.font-2 {
+    font-size: 22px;
+}
+
+.font-3 {
+    font-size: 26px;
+}
+
+.font-4 {
+    font-size: 32px;
+}
+
+.font-5 {
+    font-size: 40px;
+}
+
+.font-6 {
+    font-size: 50px;
+}
+
+.gap-1 {
+    gap: 10px;
+}
+
+.gap-2 {
+    gap: 20px;
+}
+
+.gap-3 {
+    gap: 30px;
+}
+
+.gap-4 {
+    gap: 40px;
+}
+
+.gap-5 {
+    gap: 50px;
+}
+
+.gap-6 {
+    gap: 60px;
+}
+
+.z-5 {
+    z-index: 5;
+}
+
+/* header -------- */
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100px;
+    display: grid;
+    place-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(100px);
+    z-index: 5;
+    transition: 0.3s;
+}
+header:hover{
+    background-color: rgba(255, 255, 255, 1);
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+}
+.logo-header{
+    height: 70px;
+}
+.header-content nav{
+    display: flex;
+    gap: 50px;
+}
+
+/* home ----------- */
+.main-fondo{
+    width: 100%;
+    height: calc(100dvh - 250px);
+    margin-top: 100px;
+    overflow: hidden;
+    background-color: #000;
+    position: relative;
+}
+.main-fondo img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.main-fondo-info{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    font-size: 20px;
+}
+.main-fondo-info *{
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+}
+.box-clocks img{
+    width: 200px;
+}
+.marquee{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+.logos-marcas{
+    min-width: 1800px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    animation: marquee 55s linear infinite;
+}
+.logos-marcas img{
+    height: 40px;
+}
+@keyframes marquee {
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.box-reloj-hierro{
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+}
+.box-reloj-hierro img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+.box-reloj-hierro:hover img{
+    transform: scale(1.2);
+}
