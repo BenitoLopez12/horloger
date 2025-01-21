@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 
 <head>
   <?php include('develop/components/head.php'); ?>
+  <link rel="stylesheet" href="develop/css/home.css" />
 </head>
 
 <body>
@@ -32,9 +33,9 @@
       </div>
     <?php } ?>
   </div>
-  <div style="width: 1000px; margin: auto;">
+  <div class="content-limit">
     <h2 class="text-center mt-2 font-3">SELECCIÓN PALACIO DE HIERRO</h2>
-    <div class="flex justify-center gap-1 box-clocks mt-2" style="align-items: flex-start;">
+    <div class="gap-1 box-clocks mt-2" style="align-items: flex-start;">
       <article>
         <div class="box-reloj-hierro"><img src="develop/img/clock-1.png" alt="Reloj de palacio de hierro" /></div>
         <div>

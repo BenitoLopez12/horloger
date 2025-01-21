@@ -1,0 +1,40 @@
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100px;
+    display: grid;
+    place-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(100px);
+    z-index: 5;
+    transition: 0.3s;
+}
+header:hover{
+    background-color: rgba(255, 255, 255, 1);
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+}
+.logo-header{
+    height: 70px;
+}
+.header-content nav{
+    display: flex;
+    gap: 50px;
+}
+footer .icon{
+    width: 30px;
+}
+
+/* responsive ----- */
+@media(width < 500px){
+    .header-content nav{
+        gap: 30px;
+    }
+}
