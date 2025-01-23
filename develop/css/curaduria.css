@@ -1,0 +1,34 @@
+body{
+    font-family: poppins;
+}
+
+.item-cur{
+    width: 33.33%;
+    border: 1px solid #ccc;
+    padding: 100px 5%;
+}
+.item-cur h2, .item-cur {
+    margin: 0;
+}
+
+@media(width < 850px){
+    .flex{
+        flex-wrap: wrap;
+    }
+    .info-philo{
+        min-width: 100%;
+        margin-top: 50px;
+    }
+    .img-philo{
+        position: absolute;
+        width: 100px !important;
+        height: 100px;
+        overflow: hidden;
+        top: 100px;
+        right: 50px;
+        border-radius: 100px;
+    }
+    .item-cur{
+        width: 100%;
+    }
+}

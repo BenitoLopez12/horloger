@@ -9,7 +9,7 @@
         <div class="flex justify-center align-center gap-3" style="font-size: 16px;">
             <a href="">Agenda una cita</a>
             <hr class="vertical">
-            <a href="">telefono</a>
+            <a href="">Telefono</a>
             <hr class="vertical">
             <a href="">Mail</a>
         </div>
