@@ -3,7 +3,7 @@
 
 <head>
     <?php include('site/components/head.php'); ?>
-    <link rel="stylesheet" href="site/css/home.css" />
+    <link rel="stylesheet" href="site/css/home.css?v1.1" />
 </head>
 
 <body>
@@ -30,6 +30,9 @@
                 <img src="/site/img/logo-marca-6.png" alt="Logo de marca">
                 <img src="/site/img/logo-marca-7.png" alt="Logo de marca">
                 <img src="/site/img/logo-marca-8.png" alt="Logo de marca">
+                <img src="/site/img/logo-marca-9.png" alt="Logo de marca">
+                <img src="/site/img/logo-marca-10.png" alt="Logo de marca">
+                <img src="/site/img/logo-marca-11.png" alt="Logo de marca">
             </div>
         <?php } ?>
     </div>
@@ -76,16 +79,6 @@
     </div>
     <div class="mt-2">
         <hr style="width: 50%; margin: auto;">
-    </div>
-    <div class="mt-2">
-        <p class="text-center font-2" style="margin: auto; max-width: 600px; width: 90%;">
-            En el mundo de la alta relojería, donde la tradición a menudo dicta las reglas, HG surge como un desafío a lo establecido. No seguimos tendencias; las redefinimos. No nos conformamos con lo convencional; buscamos lo extraordinario.
-        </p>
-    </div>
-    <div class="mt-2">
-        <p class="text-center font-2" style="margin: auto; max-width: 600px; width: 90%;">
-            Somos más que un distribuidor de relojes de lujo: somos curadores de innovación, carácter y excelencia. Nuestra selección es un manifiesto de independencia y vanguardia, reuniendo las marcas más impactantes y exclusivas en el arte de la relojería. Desde las creaciones vanguardistas de Roger Dubuis hasta la elegancia reinventada de Czapek, cada pieza que elegimos representa el equilibrio perfecto entre tradición y evolución.
-        </p>
     </div>
     <div class="mt-2">
         <p class="text-center font-2" style="margin: auto; max-width: 600px; width: 90%;">

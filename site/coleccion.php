@@ -3,7 +3,7 @@
 
 <head>
     <?php include('components/head.php'); ?>
-    <link rel="stylesheet" href="css/coleccion.css" />
+    <link rel="stylesheet" href="css/coleccion.css?v1.1" />
 </head>
 
 <body>
@@ -27,6 +27,9 @@
                 <img src="/site/img/logo-marca-6.png" alt="Logo de marca">
                 <img src="/site/img/logo-marca-7.png" alt="Logo de marca">
                 <img src="/site/img/logo-marca-8.png" alt="Logo de marca">
+                <img src="/site/img/logo-marca-9.png" alt="Logo de marca">
+                <img src="/site/img/logo-marca-10.png" alt="Logo de marca">
+                <img src="/site/img/logo-marca-11.png" alt="Logo de marca">
             </div>
         <?php } ?>
     </div>

@@ -3,7 +3,7 @@
 
 <head>
     <?php include('components/head.php'); ?>
-    <link rel="stylesheet" href="css/curaduria.css" />
+    <link rel="stylesheet" href="css/curaduria.css?v1.1" />
 </head>
 
 <body>

@@ -46,7 +46,8 @@
     animation: marquee 55s linear 7s infinite;
 }
 .logos-marcas img{
-    height: 40px;
+    height: 45px;
+    filter: invert(100%);
 }
 @keyframes marquee {
     100%{
