@@ -1,7 +1,7 @@
 <footer class="mt-3" style="padding: 20px; border: 1px solid #ccc;">
     <div class="flex justify-between align-center">
         <div style="width: 230px;" class="mobile-none">
-            <img src="site/img/icon-ig.svg" alt="" style="width: 30px;" />
+            <img src="/site/img/icon-ig.svg" alt="" style="width: 30px;" />
         </div>
         <a href="" class="solo-mobile">
             <img src="/site/img/icon-ig.svg" class="icon" alt="">

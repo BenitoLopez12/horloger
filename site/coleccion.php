@@ -32,76 +32,77 @@
     </div>
 
     <div class="content-limit">
-        <div class="marca-box">
-            <h2 class="text-center mt-2 font-2">CZAPEK</h2>
-            <div class="gap-1 box-clocks mt-2" style="align-items: flex-start;">
-                <article>
-                    <div class="box-reloj-hierro"><img src="/site/img/clock-1.png" alt="Reloj de palacio de hierro" /></div>
-                    <div>
-                        <span class="font-1">Andy Warhol watch</span><br>
-                        <span>Automatic White Gold Watch</span>
-                    </div>
-                </article>
-                <article>
-                    <div class="box-reloj-hierro"><img src="/site/img/clock-2.png" alt="Reloj de palacio de hierro" /></div>
-                    <div>
-                        <span class="font-1">Andy Warhol watch</span><br>
-                        <span>Automatic White Gold Watch</span>
-                    </div>
-                </article>
-                <article>
-                    <div class="box-reloj-hierro"><img src="/site/img/clock-3.png" alt="Reloj de palacio de hierro" /></div>
-                    <div>
-                        <span class="font-1">Andy Warhol watch</span><br>
-                        <span>Automatic White Gold Watch</span>
-                    </div>
-                </article>
-                <article>
-                    <div class="box-reloj-hierro"><img src="/site/img/clock-4.png" alt="Reloj de palacio de hierro" /></div>
-                    <div>
-                        <span class="font-1">Andy Warhol watch</span><br>
-                        <span>Automatic White Gold Watch</span>
-                    </div>
-                </article>
-            </div>
-        </div>
-        <hr style="margin: 50px;">
-        <div class="marca-box">
-            <h2 class="text-center mt-2 font-2">BAHUER</h2>
-            <div class="gap-1 box-clocks mt-2" style="align-items: flex-start;">
-                <article>
-                    <div class="box-reloj-hierro"><img src="/site/img/clock-1.png" alt="Reloj de palacio de hierro" /></div>
-                    <div>
-                        <span class="font-1">Andy Warhol watch</span><br>
-                        <span>Automatic White Gold Watch</span>
-                    </div>
-                </article>
-                <article>
-                    <div class="box-reloj-hierro"><img src="/site/img/clock-2.png" alt="Reloj de palacio de hierro" /></div>
-                    <div>
-                        <span class="font-1">Andy Warhol watch</span><br>
-                        <span>Automatic White Gold Watch</span>
-                    </div>
-                </article>
-                <article>
-                    <div class="box-reloj-hierro"><img src="/site/img/clock-3.png" alt="Reloj de palacio de hierro" /></div>
-                    <div>
-                        <span class="font-1">Andy Warhol watch</span><br>
-                        <span>Automatic White Gold Watch</span>
-                    </div>
-                </article>
-                <article>
-                    <div class="box-reloj-hierro"><img src="/site/img/clock-4.png" alt="Reloj de palacio de hierro" /></div>
-                    <div>
-                        <span class="font-1">Andy Warhol watch</span><br>
-                        <span>Automatic White Gold Watch</span>
-                    </div>
-                </article>
-            </div>
+        <div class="marcas-relojes">
+
         </div>
     </div>
 
+    <div id="relojes-container"></div>
+
     <?php include('components/footer.php'); ?>
+
+
+    <script>
+        const sheetID = "1iaKdpzXP0k0OmIfoGhRJlqzpMD_EpWC1NrgCEomL6NI"; // ID de tu hoja
+        const sheetName = "relojes"; // Nombre de la pestaña
+        const url = `https://opensheet.elk.sh/${sheetID}/${sheetName}`;
+
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                const container = document.querySelector(".marcas-relojes");
+                const relojesPorMarca = {};
+
+                // Agrupar relojes por marca
+                data.forEach(reloj => {
+                    const marca = reloj["MARCA"];
+
+                    if (!relojesPorMarca[marca]) {
+                        relojesPorMarca[marca] = [];
+                    }
+                    relojesPorMarca[marca].push(reloj);
+                });
+
+                // Generar HTML por cada marca
+                for (const marca in relojesPorMarca) {
+                    const marcaBox = document.createElement("div");
+                    marcaBox.className = "marca-box";
+
+                    // Título de la marca
+                    marcaBox.innerHTML = `<h2 class="text-center mt-2 font-2">${marca}</h2>`;
+
+                    const relojesContainer = document.createElement("div");
+                    relojesContainer.className = "gap-1 box-clocks mt-2";
+                    relojesContainer.style.alignItems = "flex-start";
+
+                    // Generar los relojes de esta marca
+                    relojesPorMarca[marca].forEach(reloj => {
+                        const relojCard = document.createElement("article");
+
+                        // Usar la imagen base64 si está disponible
+                        const imagen = reloj["IMAGEN"] ? reloj["IMAGEN"] : reloj["URL FOTO"];
+
+                        relojCard.innerHTML = `
+                        <a href="">
+                            <div class="box-reloj-hierro">
+                                <img src="${imagen}" alt="${reloj["NOMBRE RELOJ"]}" />
+                            </div>
+                            <div>
+                                <span class="font-1">${reloj["NOMBRE RELOJ"]}</span><br>
+                                <span>${reloj["COLECCION"]}</span>
+                            </div>
+                            </a>
+                        `;
+
+                        relojesContainer.appendChild(relojCard);
+                    });
+
+                    marcaBox.appendChild(relojesContainer);
+                    container.appendChild(marcaBox);
+                }
+            })
+            .catch(error => console.error("Error al obtener los datos:", error));
+    </script>
 
 </body>
 

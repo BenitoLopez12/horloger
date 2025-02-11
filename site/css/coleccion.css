@@ -34,10 +34,24 @@
     gap: 20px;
 }
 
+.marca-box{
+    border-bottom: 3px solid #2d2d2d;
+    padding-bottom: 50px;
+}
+
 .box-clocks{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     place-items: center;
+}
+.box-clocks article{
+    display: none;
+}
+.box-clocks article:nth-child(1),
+.box-clocks article:nth-child(2),
+.box-clocks article:nth-child(3),
+.box-clocks article:nth-child(4){
+    display: block !important;
 }
 .box-clocks img{
     width: 200px;
@@ -72,3 +86,40 @@
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+
+
+
+
+.marca-section {
+    margin: 20px 0;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  .marca-section h2 {
+    text-align: left;
+    color: #333;
+  }
+  
+  .relojes-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .reloj-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reloj-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  

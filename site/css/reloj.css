@@ -1,0 +1,50 @@
+.box-indications{
+    background-image: url('../img/fondo-reloj.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0px;
+    width: 100%;
+    color: #fff;
+    font-family: poppins;
+    position: relative;
+}
+.box-indications::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(33 31 137);
+    opacity: 0.7;
+    z-index: 0;
+}
+.box-indications *{
+    z-index: 1;
+}
+.box-icons-reloj{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+
+.box-icons-reloj article{
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+    gap: 10px;
+}
+
+.box-icons-reloj article i{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    display: grid;
+    place-items: center;
+    border: 1px solid #fff;
+}
+
+.box-icons-reloj article i img{
+    height: 60px;
+}
