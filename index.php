@@ -36,34 +36,42 @@
     <div class="content-limit">
         <h2 class="text-center mt-2 font-3">SELECCIÓN PALACIO DE HIERRO</h2>
         <div class="gap-1 box-clocks mt-2" style="align-items: flex-start;">
-            <article>
-                <div class="box-reloj-hierro"><img src="site/img/clock-1.png" alt="Reloj de palacio de hierro" /></div>
-                <div>
-                    <span class="font-1">Andy Warhol watch</span><br>
-                    <span>Automatic White Gold Watch</span>
-                </div>
-            </article>
-            <article>
-                <div class="box-reloj-hierro"><img src="site/img/clock-2.png" alt="Reloj de palacio de hierro" /></div>
-                <div>
-                    <span class="font-1">Andy Warhol watch</span><br>
-                    <span>Automatic White Gold Watch</span>
-                </div>
-            </article>
-            <article>
-                <div class="box-reloj-hierro"><img src="site/img/clock-3.png" alt="Reloj de palacio de hierro" /></div>
-                <div>
-                    <span class="font-1">Andy Warhol watch</span><br>
-                    <span>Automatic White Gold Watch</span>
-                </div>
-            </article>
-            <article>
-                <div class="box-reloj-hierro"><img src="site/img/clock-4.png" alt="Reloj de palacio de hierro" /></div>
-                <div>
-                    <span class="font-1">Andy Warhol watch</span><br>
-                    <span>Automatic White Gold Watch</span>
-                </div>
-            </article>
+            <a href="/site/reloj.php">
+                <article>
+                    <div class="box-reloj-hierro"><img src="site/img/clock-1.png" alt="Reloj de palacio de hierro" /></div>
+                    <div>
+                        <span class="font-1">Andy Warhol watch</span><br>
+                        <span>Automatic White Gold Watch</span>
+                    </div>
+                </article>
+            </a>
+            <a href="/site/reloj.php">
+                <article>
+                    <div class="box-reloj-hierro"><img src="site/img/clock-2.png" alt="Reloj de palacio de hierro" /></div>
+                    <div>
+                        <span class="font-1">Andy Warhol watch</span><br>
+                        <span>Automatic White Gold Watch</span>
+                    </div>
+                </article>
+            </a>
+            <a href="/site/reloj.php">
+                <article>
+                    <div class="box-reloj-hierro"><img src="site/img/clock-3.png" alt="Reloj de palacio de hierro" /></div>
+                    <div>
+                        <span class="font-1">Andy Warhol watch</span><br>
+                        <span>Automatic White Gold Watch</span>
+                    </div>
+                </article>
+            </a>
+            <a href="/site/reloj.php">
+                <article>
+                    <div class="box-reloj-hierro"><img src="site/img/clock-4.png" alt="Reloj de palacio de hierro" /></div>
+                    <div>
+                        <span class="font-1">Andy Warhol watch</span><br>
+                        <span>Automatic White Gold Watch</span>
+                    </div>
+                </article>
+            </a>
         </div>
     </div>
     <div class="mt-2">
@@ -71,10 +79,22 @@
     </div>
     <div class="mt-2">
         <p class="text-center font-2" style="margin: auto; max-width: 600px; width: 90%;">
-            Casa relojera, curadores expertos en alta relojería en México
-            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+            En el mundo de la alta relojería, donde la tradición a menudo dicta las reglas, HG surge como un desafío a lo establecido. No seguimos tendencias; las redefinimos. No nos conformamos con lo convencional; buscamos lo extraordinario.
+        </p>
+    </div>
+    <div class="mt-2">
+        <p class="text-center font-2" style="margin: auto; max-width: 600px; width: 90%;">
+            Somos más que un distribuidor de relojes de lujo: somos curadores de innovación, carácter y excelencia. Nuestra selección es un manifiesto de independencia y vanguardia, reuniendo las marcas más impactantes y exclusivas en el arte de la relojería. Desde las creaciones vanguardistas de Roger Dubuis hasta la elegancia reinventada de Czapek, cada pieza que elegimos representa el equilibrio perfecto entre tradición y evolución.
+        </p>
+    </div>
+    <div class="mt-2">
+        <p class="text-center font-2" style="margin: auto; max-width: 600px; width: 90%;">
+            En HG, entendemos que un reloj no es solo un objeto de lujo, sino una declaración de identidad. Por eso, nos dirigimos a quienes desafían los límites, a los coleccionistas y visionarios que buscan piezas con carácter, historia y un impacto que trasciende el tiempo.
+        </p>
+    </div>
+    <div class="mt-2">
+        <p class="text-center font-2" style="margin: auto; max-width: 600px; width: 90%;">
+            Si lo clásico te aburre y lo extraordinario te inspira, bienvenido a HG: donde la alta relojería encuentra su lado más exclusivo.
         </p>
     </div>
 

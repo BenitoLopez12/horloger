@@ -14,6 +14,7 @@
         <div class="flex gap-4 align-center">
             <img src="img/clock-1.png" alt="Reloj">
             <div class="reloj-info font-1 text-center">
+                <h1>Andy Warhol watch</h1>
                 <p>
                     Casa relojera, curadores expertos en alta relojería en México
                     lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum

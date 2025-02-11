@@ -48,3 +48,10 @@
 .box-icons-reloj article i img{
     height: 60px;
 }
+
+@media(width < 800px){
+    .content-limit .flex,
+    .box-indications .flex{
+        flex-direction: column;
+    }
+}

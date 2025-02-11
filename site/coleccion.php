@@ -11,7 +11,7 @@
     <?php include('components/header.php'); ?>
     <div class="content-limit">
         <div class="flex" style="margin-top: 100px; justify-content: flex-end;">
-            <a href="" class="btn-border">
+            <a href="/site/reloj.php" class="btn-border">
                 RELOJES
             </a>
         </div>
@@ -83,7 +83,7 @@
                         const imagen = reloj["IMAGEN"] ? reloj["IMAGEN"] : reloj["URL FOTO"];
 
                         relojCard.innerHTML = `
-                        <a href="">
+                        <a href="/site/reloj.php">
                             <div class="box-reloj-hierro">
                                 <img src="${imagen}" alt="${reloj["NOMBRE RELOJ"]}" />
                             </div>
