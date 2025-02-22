@@ -6,11 +6,12 @@
     background-color: #000;
     position: relative;
 }
-.main-fondo img{
+.main-fondo img,
+.main-fondo video{
     object-fit: cover;
     width: 100%;
     height: 100%;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 .main-fondo-info{
     position: absolute;
@@ -32,26 +33,46 @@
 .box-clocks img{
     width: 200px;
 }
-.marquee{
-    display: flex;
-    width: 100%;
-    overflow: hidden;
-}
+
 .logos-marcas{
-    min-width: 1800px;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    animation: marquee 55s linear 7s infinite;
+    animation-delay: 4s;
 }
-.logos-marcas img{
-    height: 45px;
-    filter: invert(100%);
+
+.item-cur{
+    width: 33.33%;
+    border: 1px solid #ccc;
+    padding: 100px 5%;
 }
-@keyframes marquee {
-    100%{
-        transform: translateX(-100%);
+.item-cur h2, .item-cur {
+    margin: 0;
+}
+.info-philo{
+    font-family: poppins;
+}
+.info-philo p{
+    line-height: 20px;
+}
+
+@media(width < 850px){
+    .flex{
+        flex-wrap: wrap;
+    }
+    .info-philo{
+        min-width: 100%;
+        margin-top: 50px;
+    }
+    .img-philo{
+        position: absolute;
+        width: 100px !important;
+        height: 100px;
+        overflow: hidden;
+        top: 0px;
+        right: 50px;
+        margin-top: -10px;
+        border-radius: 100px;
+    }
+    .item-cur{
+        width: 100%;
     }
 }
 
@@ -72,7 +93,7 @@
 
 /* animations ----------- */
 header{
-    animation: headerFirst 1s ease-out 4s both;
+    animation: headerFirst 1s ease-out 2s both;
 }
 @keyframes headerFirst {
     0%{
@@ -80,23 +101,23 @@ header{
     }
 }
 .main-fondo{
-    animation: fondoFirst 5s ease-out both;
+    animation: fondoFirst 3s ease-out both;
 }
 @keyframes fondoFirst {
     0%{
-        filter: blur(5px);
         height: 100dvh;
         margin-top: 0px;
     }
-    15%{
+    33.33%{
         filter: blur(0px);
     }
-    80%{
+    66.66%{
         height: 100dvh;
         margin-top: 0px;
     }
 }
-.main-fondo img{
+.main-fondo img,
+.main-fondo video{
     animation: fondoImgFirst 1s ease-out 4s both;
 }
 @keyframes fondoImgFirst {
@@ -105,7 +126,7 @@ header{
     }
 }
 .main-fondo-info{
-    animation: fondoInfoFirst 0.6s ease-out 5s both;
+    animation: fondoInfoFirst 0.6s ease-out 3s both;
 }
 @keyframes fondoInfoFirst {
     0%{
@@ -114,13 +135,11 @@ header{
     }
 }
 .logo-header{
-    animation: logoFirst 1s ease-out 4s both;   
+    animation: logoFirst 1s ease-out 2s both;   
 }
 @keyframes logoFirst {
     0%{
-        margin-bottom: -200px;
         filter: invert(100%);
-        transform: scale(1.2);
     }
 }
 

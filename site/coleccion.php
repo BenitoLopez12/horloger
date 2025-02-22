@@ -3,7 +3,7 @@
 
 <head>
     <?php include('components/head.php'); ?>
-    <link rel="stylesheet" href="css/coleccion.css?v1.1" />
+    <link rel="stylesheet" href="css/coleccion.css?v1.2" />
 </head>
 
 <body>
@@ -16,22 +16,9 @@
             </a>
         </div>
     </div>
-    <div class="marquee mt-1">
-        <?php for ($i = 0; $i < 5; $i++) { ?>
-            <div class="logos-marcas">
-                <img src="/site/img/logo-marca-1.png" alt="Logo de marca">
-                <img src="/site/img/logo-marca-2.png" alt="Logo de marca">
-                <img src="/site/img/logo-marca-3.png" alt="Logo de marca">
-                <img src="/site/img/logo-marca-4.png" alt="Logo de marca">
-                <img src="/site/img/logo-marca-5.png" alt="Logo de marca">
-                <img src="/site/img/logo-marca-6.png" alt="Logo de marca">
-                <img src="/site/img/logo-marca-7.png" alt="Logo de marca">
-                <img src="/site/img/logo-marca-8.png" alt="Logo de marca">
-                <img src="/site/img/logo-marca-9.png" alt="Logo de marca">
-                <img src="/site/img/logo-marca-10.png" alt="Logo de marca">
-                <img src="/site/img/logo-marca-11.png" alt="Logo de marca">
-            </div>
-        <?php } ?>
+
+    <div class="mt-1">
+        <?php include('components/marqueeMarcas.php'); ?>
     </div>
 
     <div class="content-limit">
