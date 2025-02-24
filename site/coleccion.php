@@ -3,7 +3,7 @@
 
 <head>
     <?php include('components/head.php'); ?>
-    <link rel="stylesheet" href="css/coleccion.css?v1.2" />
+    <link rel="stylesheet" href="css/coleccion.css?v1.3" />
 </head>
 
 <body>
@@ -22,12 +22,12 @@
     </div>
 
     <div class="content-limit">
-        <div class="marcas-relojes">
+        <div class="crr-marcas-relojes">
+            <div class="marcas-relojes">
 
+            </div>
         </div>
     </div>
-
-    <div id="relojes-container"></div>
 
     <?php include('components/footer.php'); ?>
 
@@ -73,14 +73,14 @@
                         const imagen = reloj["IMAGEN"] ? reloj["IMAGEN"] : reloj["URL FOTO"];
 
                         relojCard.innerHTML = `
-                        <a href="/site/reloj.php">
-                            <div class="box-reloj-hierro">
-                                <img src="${imagen}" alt="${reloj["NOMBRE RELOJ"]}" />
-                            </div>
-                            <div>
-                                <span class="font-1">${reloj["NOMBRE RELOJ"]}</span><br>
-                                <span>${reloj["COLECCION"]}</span>
-                            </div>
+                            <a href="/site/reloj.php">
+                                <div class="box-reloj-hierro">
+                                    <img src="${imagen}" alt="${reloj["NOMBRE RELOJ"]}" />
+                                </div>
+                                <div>
+                                    <span class="font-1">${reloj["NOMBRE RELOJ"]}</span><br>
+                                    <span>${reloj["COLECCION"]}</span>
+                                </div>
                             </a>
                         `;
 

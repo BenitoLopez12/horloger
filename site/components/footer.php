@@ -13,9 +13,9 @@
             <hr class="vertical">
             <a href="">Mail</a>
         </div>
-        <a href="" class="solo-mobile">
+        <button class="solo-mobile" onclick="document.querySelector('#modal-map').showModal();">
             <img src="/site/img/icon-map.png" class="icon" alt="">
-        </a>
+        </button>
         <div style="width: 230px;" class="mobile-none">
             <strong class="font-1" style="text-align: right; cursor: pointer;" onclick="document.querySelector('#modal-map').showModal();"> Edificio El Pantalón, Bosques CDMX </strong>
         </div>
@@ -30,11 +30,6 @@
     dialog.addEventListener('click', (event) => {
         if (event.target === dialog) {
             dialog.close();
-            dialog.addEventListener('transitionend', () => {
-                dialog.close(); // Cierra el diálogo después de la animación
-            }, {
-                once: true
-            });
         }
     });
 </script>

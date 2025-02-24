@@ -1,10 +1,10 @@
 .main-fondo{
     width: 100%;
-    height: calc(100dvh - 250px);
-    margin-top: 100px;
+    height: 100dvh;
     overflow: hidden;
     background-color: #000;
-    position: relative;
+    position: fixed;
+    z-index: -1;
 }
 .main-fondo img,
 .main-fondo video{
@@ -19,11 +19,18 @@
     left: 20px;
     color: #fff;
     font-size: 20px;
+    margin-bottom: 150px;
 }
 .main-fondo-info *{
     margin: 0;
     padding: 0;
     font-weight: lighter;
+}
+main{
+    background-color: #fff;
+}
+.marquee{
+    margin-top: calc(100dvh - 150px);
 }
 .box-clocks{
     display: grid;
@@ -67,7 +74,7 @@
         height: 100px;
         overflow: hidden;
         top: 0px;
-        right: 50px;
+        right: 0px;
         margin-top: -10px;
         border-radius: 100px;
     }
@@ -105,14 +112,12 @@ header{
 }
 @keyframes fondoFirst {
     0%{
-        height: 100dvh;
         margin-top: 0px;
     }
     33.33%{
         filter: blur(0px);
     }
     66.66%{
-        height: 100dvh;
         margin-top: 0px;
     }
 }
@@ -140,6 +145,14 @@ header{
 @keyframes logoFirst {
     0%{
         filter: invert(100%);
+    }
+}
+.marquee{
+    animation: fondoMarquee 1s ease-out 2s both;
+}
+@keyframes fondoMarquee {
+    0%{
+        margin-top: 100dvh;
     }
 }
 
