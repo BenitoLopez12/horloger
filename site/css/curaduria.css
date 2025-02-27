@@ -3,14 +3,28 @@ body{
 }
 
 .item-cur{
-    width: 33.33%;
+    width: 25%;
     border: 1px solid #ccc;
-    padding: 100px 5%;
+    padding: 30px 60px;
+    display: grid;
+    place-items: center;
 }
 .item-cur h2, .item-cur {
     margin: 0;
 }
-
+@media(width < 1300px){
+    .item-cur{
+        padding: 15px 30px;
+    }
+}
+@media(width < 1050px){
+    .wrap-mison{
+        flex-wrap: wrap;
+    }
+    .item-cur{
+        width: 48%;
+    }
+}
 @media(width < 850px){
     .flex{
         flex-wrap: wrap;

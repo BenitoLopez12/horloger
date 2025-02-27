@@ -9,15 +9,16 @@
 <body>
 
     <?php include('components/header.php'); ?>
-    <div class="content-limit">
+
+    <!-- <div class="content-limit">
         <div class="flex" style="margin-top: 100px; justify-content: flex-end;">
             <a href="/site/reloj.php" class="btn-border">
                 RELOJES
             </a>
         </div>
-    </div>
+    </div> -->
 
-    <div class="mt-1">
+    <div class="" style="margin-top: 100px;">
         <?php include('components/marqueeMarcas.php'); ?>
     </div>
 
