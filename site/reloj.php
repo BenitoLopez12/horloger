@@ -44,39 +44,45 @@
                 <div class="box-icons-reloj">
                     <article>
                         <i>
-                            <img src="img/icon-clock.png" alt="icon">
+                            <img src="img/icon-diameter.png" alt="icon">
+                            <small>30 mm</small>
                         </i>
                         <span>DIAMETER</span>
                     </article>
                     <article>
                         <i>
-                            <img src="img/icon-clock.png" alt="icon">
+                            <img src="img/icon-mirco-roter.png" alt="icon">
+                            <small></small>
                         </i>
-                        <span>DIAMETER</span>
+                        <span>MIRCO-ROTOR</span>
                     </article>
                     <article>
                         <i>
-                            <img src="img/icon-clock.png" alt="icon">
+                            <img src="img/icon-second-stop.png" alt="icon">
                         </i>
-                        <span>DIAMETER</span>
+                        <span>STOP <br> SECOND</span>
                     </article>
                     <article>
                         <i>
-                            <img src="img/icon-clock.png" alt="icon">
+                            <img src="img/icon-star.png" alt="icon">
                         </i>
-                        <span>DIAMETER</span>
+                        <span>LIMITED <br> EDITION</span>
                     </article>
                     <article>
                         <i>
-                            <img src="img/icon-clock.png" alt="icon">
+                            <img src="img/icon-water.png" alt="icon">
                         </i>
-                        <span>DIAMETER</span>
+                        <span>WATERPROOF</span>
                     </article>
                     <article>
-                        <i>
-                            <img src="img/icon-clock.png" alt="icon">
+                        <i style="font-style: normal;">
+                            <samp class="text-center">
+                                3
+                                <br>
+                                YEARS
+                            </samp>
                         </i>
-                        <span>DIAMETER</span>
+                        <span>WARRANTY</span>
                     </article>
                 </div>
             </div>
