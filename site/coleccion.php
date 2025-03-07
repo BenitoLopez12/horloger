@@ -74,7 +74,7 @@
                         const imagen = reloj["IMAGEN"] ? reloj["IMAGEN"] : reloj["URL FOTO"];
 
                         relojCard.innerHTML = `
-                            <a href="/site/reloj.php">
+                            <a href="/site/reloj.php?id=${reloj["ID"]}">
                                 <div class="box-reloj-hierro">
                                     <img src="${imagen}" alt="${reloj["NOMBRE RELOJ"]}" />
                                 </div>

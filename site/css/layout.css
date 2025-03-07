@@ -47,7 +47,33 @@ header:hover{
 footer .icon{
     width: 30px;
 }
-
+.option-phone-info{
+    position: relative;
+}
+.phone-info{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    background-color: #201f32;
+    top: 0;
+    left: 0;
+    width: 150px;
+    margin-top: -60px;
+    margin-left: -50px;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0px;
+    font-family: poppins;
+    border-radius: 6px;
+    transform: translateY(50%);
+    transition: 0.2s;
+}
+.option-phone-info:hover .phone-info{
+    transition: 0.4s;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0%);
+}
 
 .title-line{
     text-align: center;    

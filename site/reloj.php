@@ -12,20 +12,16 @@
 
     <div class="content-limit" style="margin-top: 150px;">
         <div class="flex gap-4 align-center">
-            <img src="img/clock-1.png" alt="Reloj">
+            <div class="box-img-reloj">
+                <img src="img/clock-1.png" alt="Reloj" id="reloj-img">
+            </div>
             <div class="reloj-info font-1 text-center">
-                <h1>Andy Warhol watch</h1>
+                <h1 id="reloj-title">Andy Warhol watch</h1>
                 <p>
-                    Casa relojera, curadores expertos en alta relojería en México
-                    lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                    lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                    lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                    La historia GoS Watches, comienza en el año 2007, con el encuentro entre el maestro forjador de cuchillos y espadas artesanales Johan Gustafsson y del maestro relojero Patrik Sjögren, para sumar du sus pasiones y tradiciones escandinavas.  La destreza de forjar acero de damasco con sus intrincados patrones y personalidad crea obras de arte únicas que le aportan a cada reloj GoS un carácter propio e irrepetible.  La pasión por la manufactura tradicional y artesanal se lleva como valor primordial en GoS, cada una de las partes inclusive las cajas de presentación reflejan la pasión por la tradicional manufactura escandinava. 
                 </p>
                 <p>
-                    Casa relojera, curadores expertos en alta relojería en México
-                    lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                    lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                    lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                    El diseño de las colecciones de GoS recibe su inspiración de dos aspectos esenciales de la cultura escandinava. Por un lado la naturaleza, para ello se ha tomado como referencia las estaciones del año en la región Nórdica y fenómenos naturales propios de la región como las “Auroras Boreales” o el “Sol de Medianoche”.  Y por el otro lado la Historia, donde la tradición Vikinga tiene un papel central en los patrones y diseños de decoración de cada pieza.  
                 </p>
             </div>
         </div>
@@ -92,14 +88,52 @@
     <div class="content-limit mt-3 text-center" style="max-width: 600px;">
         <h2 class="font-3" style="font-weight: lighter;">¿Cómo lo reservo?</h2>
         <p class="font-2">
-            Casa relojera, curadores expertos en alta relojería en México
-            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+            Puedes ponerte en contacto con nosotros a través de nuestros distintos canales de comunicación: por correo electrónico a info@hgmexico.com.mx, por teléfono al (55) 8000-3704, o bien, visitarnos directamente en nuestras oficinas ubicadas en P.º de los Tamarindos 400A, Piso 6, Bosques de las Lomas, Cuajimalpa de Morelos, 05120, Ciudad de México, CDMX.
         </p>
     </div>
 
     <?php include('components/footer.php'); ?>
+
+    <script>
+        const sheetID = "1iaKdpzXP0k0OmIfoGhRJlqzpMD_EpWC1NrgCEomL6NI";
+        const sheetName = "relojes"; // Nombre de la pestaña
+        const url = `https://opensheet.elk.sh/${sheetID}/${sheetName}`;
+
+        // Obtener el ID del reloj desde la URL
+        const params = new URLSearchParams(window.location.search);
+        const relojId = params.get('id'); 
+        
+        fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            const relojes = data;
+            console.log(relojes);
+            if (!Array.isArray(relojes) || relojes.length === 0) {
+                throw new Error('No hay datos disponibles.');
+            }
+            
+            // Buscar el reloj por ID
+            const reloj = relojes.find(row => row.ID === relojId);
+            console.log(reloj);
+
+            if (reloj) {
+                const marca = reloj["MARCA"];
+                const coleccion = reloj["COLECCION"];
+                const nombre = reloj["NOMBRE RELOJ"];
+                const urlFoto = reloj["URL FOTO"];
+                const materiales = reloj["MATERIALES"];
+                const funciones = reloj["FUNCIONES"];
+
+                document.getElementById('reloj-title').innerHTML = nombre;
+                document.getElementById('reloj-img').src = urlFoto;
+            } else {
+                // no se encontro
+            }
+        })
+        .catch(error => {
+            console.error("Error al cargar los datos:", error);
+        });
+    </script>
 
 </body>
 
