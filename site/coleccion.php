@@ -3,7 +3,7 @@
 
 <head>
     <?php include('components/head.php'); ?>
-    <link rel="stylesheet" href="css/coleccion.css?v1.3" />
+    <link rel="stylesheet" href="css/coleccion.css?v1.4" />
 </head>
 
 <body>

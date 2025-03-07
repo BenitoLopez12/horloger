@@ -3,7 +3,7 @@
 
 <head>
     <?php include('components/head.php'); ?>
-    <link rel="stylesheet" href="css/reloj.css?v1.3" />
+    <link rel="stylesheet" href="css/reloj.css?v1.4" />
 </head>
 
 <body>

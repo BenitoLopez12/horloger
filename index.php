@@ -3,7 +3,7 @@
 
 <head>
     <?php include('site/components/head.php'); ?>
-    <link rel="stylesheet" href="site/css/home.css?v1.3" />
+    <link rel="stylesheet" href="site/css/home.css?v1.4" />
 </head>
 
 <body>
