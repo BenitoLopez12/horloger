@@ -11,36 +11,18 @@
     <?php include('components/header.php'); ?>
 
     <div class="content-limit" style="margin-top: 100px;">
-        <div class="flex gap-4" style="align-items: flex-end;">
+        <div class="flex align-center gap-4">
             <div class="info-philo" style="width: 50%;">
                 <h1>OUR PHILOSOPHY</h1>
                 <p>
-                    Our brand's uniqueness is crystallized by our tagline 'We Collect Rare People', which combines various
-                    elements that are essential in our philosophy, Notably, the ideas of 'sharing passion' and 'community'
-                    with 'rarity' and 'identity'.
+                    En HG, entendemos que un reloj no es solo un objeto de lujo, sino una declaración de identidad.
                 </p>
                 <p>
-                    "We Collect Rare People", is a play on words, a sort of oxymoron, making people ask themselves about
-                    who is collecting, What, why and whether they would like to join our 'club', or better, our 'family'.
+                    Por eso, nos dirigimos a quienes desafían los límites, a los coleccionistas y visionarios que buscan piezas con carácter, historia y un impacto que trasciende el tiempo.
                 </p>
                 <p>
-                    Czapek collects rare people in many ways.
-                </p>
-                <p>
-                    First-of-all, Czapek collects rare supplying partners that provide the brand with rare savoir-faire, proud
-                    to be a piece of this exciting project.
-                </p>
-                <p>
-                    Czapek also collects clients with a rare obsession for quality, on the quest for a unique product. In
-                    another sense, they too become partners.
-                </p>
-                <p>
-                    Czapek collects as well few yet outstanding retail partners across the globe,
-                </p>
-                <p>
-                    And last but not least, Czapek collects shareholders, fine watch lovers that have always dreamt of not
-                    only being customers, but owners of an haute horology venture, and their dream became true thanks
-                    to the crowdfunding equity campaign that made the revival of Czapek possible.
+                    Si lo clásico te aburre y lo extraordinario te inspira, bienvenido a HG:
+                    donde la alta relojería encuentra su lado más exclusivo.
                 </p>
             </div>
             <div class="img-philo" style="width: 50%;">
