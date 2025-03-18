@@ -11,12 +11,12 @@
         <div class="flex justify-center align-center gap-3" style="font-size: 16px;">
             <a  href="mailto:info@hgmexico.com.mx">Agenda una cita</a>
             <hr class="vertical">
-            <a href="tel:+525580003704" class="option-phone-info">
+            <div href="tel:+525580003704" class="option-phone-info">
                 Telefono
                 <div class="phone-info">
                     <span>(55) 8000-3704</span>
                 </div>
-            </a>
+            </div>
             <hr class="vertical">
             <a href="mailto:info@hgmexico.com.mx">Mail</a>
         </div>
