@@ -60,6 +60,26 @@ main{
     line-height: 20px;
 }
 
+.palacio-contain{
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+.palacio-contain img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+.info-palacio{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 50px;
+    color: #fff;
+    font-family: poppins;
+}
+
 @media(width < 850px){
     .flex{
         flex-wrap: wrap;

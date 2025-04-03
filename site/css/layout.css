@@ -10,7 +10,7 @@ header{
     backdrop-filter: blur(100px);
     z-index: 5;
     transition: 0.3s;
-    font-family: 'cochin';
+    font-family: 'poppins';
 }
 header:hover{
     background-color: rgba(255, 255, 255, 1);
@@ -37,6 +37,8 @@ header:hover{
     transition: 0.3s;
     padding: 10px 30px;
     border-left: 2px solid #000;
+    font-size: small;
+    letter-spacing: 1px;
 }
 .header-content nav a:hover{
     box-shadow: -3px 2px 0px 0px #3f3f3f;
@@ -44,10 +46,20 @@ header:hover{
 .header-content nav a:first-child{
     border-left: none;
 }
+
+footer{
+    background-color: #000;
+    color: #fff;
+    font-family: poppins;
+    font-size: 12px;
+}
 footer .icon{
     width: 30px;
 }
-.option-phone-info{
+footer img{
+    filter: invert(100%);
+}
+.option-default{
     position: relative;
 }
 .phone-info{
@@ -57,7 +69,6 @@ footer .icon{
     background-color: #201f32;
     top: 0;
     left: 0;
-    width: 150px;
     margin-top: -60px;
     margin-left: -50px;
     text-align: center;
@@ -68,7 +79,13 @@ footer .icon{
     transform: translateY(50%);
     transition: 0.2s;
 }
-.option-phone-info:hover .phone-info{
+.option-phone-info .phone-info{
+    width: 200px;
+}
+.option-email-info .phone-info{
+    width: 260px;
+}
+.option-default:hover .phone-info{
     transition: 0.4s;
     visibility: visible;
     opacity: 1;
@@ -110,9 +127,9 @@ dialog[open]{
 dialog{
     max-width: 1000px;
     width: 90%;
-    height: 90dvh;
     border: none;
     border-radius: 20px;
+    font-family: poppins;
     transition: 05s,
         opacity 0.3s ease-out 0.4s, 
         transform 0.4s ease-out 0.3s,
@@ -131,6 +148,10 @@ dialog[open]::backdrop{
 dialog::backdrop{
     background-color: #00000080;
     transition: 0.5s, display 0.5s ease-out 0.5s allow-discrete;
+}
+.content-modal{
+    width: 100%;
+    padding: 30px;
 }
 
 .marquee{
@@ -155,6 +176,106 @@ dialog::backdrop{
 @keyframes marquee {
     100%{
         transform: translateX(-100%);
+    }
+}
+
+.form-item{
+    padding: 10px;
+    margin-top: 30px;
+}
+.form-item label{
+    grid-area: input;
+    font-size: 18px;
+    color: #808080;
+    transition: 0.3s;
+    margin-left: 12px;
+    margin-top: 4px;
+}
+.form-item input{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(58, 58, 58, 0.733);
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.form-item .form-camp{
+    background-color: #ffffff18;
+    color: #808080;
+    width: 100%;
+    font-size: 18px;
+    padding: 4px 12px;
+    transition: 0.3s;
+}
+.form-item .form-camp:focus{
+    outline: none;
+    border-color: #000;
+}
+.form-item textarea{
+    border: 2px solid #ffffff18;
+    border-radius: 4px;
+    height: 150px;
+    resize: none;
+}
+
+.d-flex-form{
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+.d-flex-form .form-item{
+    width: 100%;
+}
+
+.form-item button{
+    color: #808080;
+    font-size: 20px;
+    width: 230px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    border-radius: 6px;
+    transition: 0.2s;
+    border: 2px solid rgba(58, 58, 58, 0.733);
+}
+.form-item button:hover{
+    /* transform: scale(1.04); */
+    border: 2px solid #000;
+    color: #000;
+}
+
+.form-item button img,
+.form-item button.enviando span,
+.form-item button.enviado span
+{
+    display: none;
+}
+.form-item button.enviando .icon-loading,
+.form-item button.enviado .icon-check
+{
+    display: block;
+    width: 45px;
+}
+.form-item button.enviando .icon-loading{
+    filter: invert(34%) sepia(99%) saturate(386%) hue-rotate(161deg) brightness(107%) contrast(91%);
+    animation: rotar 1.3s infinite linear;
+}
+.form-item button.enviado .icon-check{
+    filter: invert(51%) sepia(66%) saturate(433%) hue-rotate(98deg) brightness(101%) contrast(89%);
+}
+.form-item button.enviando,
+.form-item button.enviado{
+    background-color: #fff;
+    color: #fff;
+    border: 2px solid #fff;
+    width: 50px;
+    transition: 0s;
+}
+@keyframes rotar {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
     }
 }
 

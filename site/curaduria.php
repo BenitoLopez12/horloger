@@ -3,7 +3,7 @@
 
 <head>
     <?php include('components/head.php'); ?>
-    <link rel="stylesheet" href="css/curaduria.css?v1.4" />
+    <link rel="stylesheet" href="css/curaduria.css?v1.6" />
 </head>
 
 <body>
@@ -13,16 +13,24 @@
     <div class="content-limit" style="margin-top: 100px;">
         <div class="flex align-center gap-4">
             <div class="info-philo" style="width: 50%;">
-                <h1>OUR PHILOSOPHY</h1>
+                <h1>CURADORíA HG</h1>
                 <p>
                     En HG, entendemos que un reloj no es solo un objeto de lujo, sino una declaración de identidad.
                 </p>
                 <p>
-                    Por eso, nos dirigimos a quienes desafían los límites, a los coleccionistas y visionarios que buscan piezas con carácter, historia y un impacto que trasciende el tiempo.
+                    Por eso, nos dirigirnos a quienes desafían los limites,
+                    a los coleccionistas y visionarios que buscan piezas con carácter,
+                    historia y un impacto que trasciende el tiempo.
                 </p>
                 <p>
-                    Si lo clásico te aburre y lo extraordinario te inspira, bienvenido a HG:
-                    donde la alta relojería encuentra su lado más exclusivo.
+                    No solo somos un espacio donde se exhiben relojes.
+                    Es una curaduría de tiempo con propósito.
+                    Cada marca que forma parte de nuestra selección comparte
+                    una visión.
+                </p>
+                <p>
+                    En un mundo donde todo corre, el verdadero lujo es pausar.
+                    y elegir intención.
                 </p>
             </div>
             <div class="img-philo" style="width: 50%;">

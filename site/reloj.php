@@ -3,7 +3,7 @@
 
 <head>
     <?php include('components/head.php'); ?>
-    <link rel="stylesheet" href="css/reloj.css?v1.4" />
+    <link rel="stylesheet" href="css/reloj.css?v1.6" />
 </head>
 
 <body>
@@ -18,10 +18,10 @@
             <div class="reloj-info font-1 text-center">
                 <h1 id="reloj-title">Andy Warhol watch</h1>
                 <p>
-                    La historia GoS Watches, comienza en el año 2007, con el encuentro entre el maestro forjador de cuchillos y espadas artesanales Johan Gustafsson y del maestro relojero Patrik Sjögren, para sumar du sus pasiones y tradiciones escandinavas.  La destreza de forjar acero de damasco con sus intrincados patrones y personalidad crea obras de arte únicas que le aportan a cada reloj GoS un carácter propio e irrepetible.  La pasión por la manufactura tradicional y artesanal se lleva como valor primordial en GoS, cada una de las partes inclusive las cajas de presentación reflejan la pasión por la tradicional manufactura escandinava. 
+                    La historia GoS Watches, comienza en el año 2007, con el encuentro entre el maestro forjador de cuchillos y espadas artesanales Johan Gustafsson y del maestro relojero Patrik Sjögren, para sumar du sus pasiones y tradiciones escandinavas. La destreza de forjar acero de damasco con sus intrincados patrones y personalidad crea obras de arte únicas que le aportan a cada reloj GoS un carácter propio e irrepetible. La pasión por la manufactura tradicional y artesanal se lleva como valor primordial en GoS, cada una de las partes inclusive las cajas de presentación reflejan la pasión por la tradicional manufactura escandinava.
                 </p>
                 <p>
-                    El diseño de las colecciones de GoS recibe su inspiración de dos aspectos esenciales de la cultura escandinava. Por un lado la naturaleza, para ello se ha tomado como referencia las estaciones del año en la región Nórdica y fenómenos naturales propios de la región como las “Auroras Boreales” o el “Sol de Medianoche”.  Y por el otro lado la Historia, donde la tradición Vikinga tiene un papel central en los patrones y diseños de decoración de cada pieza.  
+                    El diseño de las colecciones de GoS recibe su inspiración de dos aspectos esenciales de la cultura escandinava. Por un lado la naturaleza, para ello se ha tomado como referencia las estaciones del año en la región Nórdica y fenómenos naturales propios de la región como las “Auroras Boreales” o el “Sol de Medianoche”. Y por el otro lado la Historia, donde la tradición Vikinga tiene un papel central en los patrones y diseños de decoración de cada pieza.
                 </p>
             </div>
         </div>
@@ -101,38 +101,38 @@
 
         // Obtener el ID del reloj desde la URL
         const params = new URLSearchParams(window.location.search);
-        const relojId = params.get('id'); 
-        
+        const relojId = params.get('id');
+
         fetch(url)
-        .then(response => response.json())
-        .then(data => {
-            const relojes = data;
-            console.log(relojes);
-            if (!Array.isArray(relojes) || relojes.length === 0) {
-                throw new Error('No hay datos disponibles.');
-            }
-            
-            // Buscar el reloj por ID
-            const reloj = relojes.find(row => row.ID === relojId);
-            console.log(reloj);
+            .then(response => response.json())
+            .then(data => {
+                const relojes = data;
+                console.log(relojes);
+                if (!Array.isArray(relojes) || relojes.length === 0) {
+                    throw new Error('No hay datos disponibles.');
+                }
 
-            if (reloj) {
-                const marca = reloj["MARCA"];
-                const coleccion = reloj["COLECCION"];
-                const nombre = reloj["NOMBRE RELOJ"];
-                const urlFoto = reloj["URL FOTO"];
-                const materiales = reloj["MATERIALES"];
-                const funciones = reloj["FUNCIONES"];
+                // Buscar el reloj por ID
+                const reloj = relojes.find(row => row.ID === relojId);
+                console.log(reloj);
 
-                document.getElementById('reloj-title').innerHTML = nombre;
-                document.getElementById('reloj-img').src = urlFoto;
-            } else {
-                // no se encontro
-            }
-        })
-        .catch(error => {
-            console.error("Error al cargar los datos:", error);
-        });
+                if (reloj) {
+                    const marca = reloj["MARCA"];
+                    const coleccion = reloj["COLECCION"];
+                    const nombre = reloj["NOMBRE RELOJ"];
+                    const urlFoto = reloj["URL FOTO"];
+                    const materiales = reloj["MATERIALES"];
+                    const funciones = reloj["FUNCIONES"];
+
+                    document.getElementById('reloj-title').innerHTML = nombre;
+                    document.getElementById('reloj-img').src = urlFoto;
+                } else {
+                    // no se encontro
+                }
+            })
+            .catch(error => {
+                console.error("Error al cargar los datos:", error);
+            });
     </script>
 
 </body>
